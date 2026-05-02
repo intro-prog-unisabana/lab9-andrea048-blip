@@ -11,4 +11,3 @@ class Car:
         self.mileage += miles
     def __str__(self):
         return f"{self.brand} - {self.year} {self.color} { self.brand} with {self.mileage} miles"
-print(Car("CAR001", "Toyota", 2020, "Red", 15000.0))
