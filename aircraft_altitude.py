@@ -19,11 +19,11 @@ def main():
 
         try:
             feet = int(value)
-        except:
+        except ValueError:
             continue
 
         if action == "A":
-            aircraft.ascend(feet)
+            aircraft.climb(feet)   
         elif action == "D":
             aircraft.descend(feet)
 
