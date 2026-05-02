@@ -46,7 +46,7 @@ def main():
                 print("Color updated.")
                 print(cars[car_id])
             else:
-                print("Car not found.")
+                print("Invalid option. Please try again.")
 
         # Opción 5
         elif option == "5":

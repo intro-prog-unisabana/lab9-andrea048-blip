@@ -8,10 +8,14 @@ class Movie:
         return f"Movie: {self.title} (Directed by {self.director}, {self.year})"
 
 
+def main():
+    title = input("Enter movie title:\n")
+    director = input("Enter director:\n")
+    year = int(input("Enter year:\n"))
 
-title = input("Enter movie title:\n")
-director = input("Enter director:\n")
-year = int(input("Enter year:\n"))
+    movie = Movie(title, director, year)
+    print(movie)
 
-movie = Movie(title, director, year)
-print(movie)
+
+if __name__ == "__main__":
+    main()

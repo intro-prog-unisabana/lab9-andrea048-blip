@@ -12,12 +12,14 @@ def main():
 
         parts = command.split()
 
-        action = parts[0]
-        feet = int(parts[1])
+        if len(parts) != 2:
+            continue
+
+        action, value = parts
+        feet = int(value)
 
         if action == "A":
             aircraft.ascend(feet)
-
         elif action == "D":
             aircraft.descend(feet)
 
