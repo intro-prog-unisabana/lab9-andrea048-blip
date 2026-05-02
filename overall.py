@@ -13,18 +13,15 @@ def main():
 
         option = input()
 
-        # Opción 1
         if option == "1":
             car = create_car_from_input()
             cars[car.car_id] = car
             print(car)
             print("Car added.")
 
-        # Opción 2
         elif option == "2":
             display_cars(cars)
 
-        # Opción 3
         elif option == "3":
             car_id = input("Enter car ID:\n")
             miles = float(input("Enter miles driven:\n"))
@@ -36,7 +33,6 @@ def main():
             else:
                 print("Car not found.")
 
-        # Opción 4
         elif option == "4":
             car_id = input("Enter car ID:\n")
             new_color = input("Enter new color:\n")
@@ -46,15 +42,15 @@ def main():
                 print("Color updated.")
                 print(cars[car_id])
             else:
-                print("Invalid option. Please try again.")
+                print("Car not found.")
 
-        # Opción 5
         elif option == "5":
             print("Goodbye!")
             break
 
         else:
-            print("Invalid option.")
+            print("Invalid option. Please try again.")
+
 
 if __name__ == "__main__":
     main()
