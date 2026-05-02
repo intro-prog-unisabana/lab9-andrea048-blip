@@ -12,16 +12,12 @@ def main():
 
         parts = command.split()
 
-       
+        
         if len(parts) != 2:
             continue
 
         action = parts[0]
-
-        try:
-            feet = int(parts[1])
-        except:
-            continue
+        feet = int(parts[1])
 
         if action == "A":
             aircraft.ascend(feet)
